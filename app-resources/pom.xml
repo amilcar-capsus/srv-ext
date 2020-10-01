@@ -13,7 +13,7 @@
     <name>Resources for application</name>
     <dependencies>
         <dependency>
-            <groupId>org.oskari</groupId>
+            <groupId>fi.nls.oskari</groupId>
             <artifactId>content-resources</artifactId>
         </dependency>
         <dependency>
