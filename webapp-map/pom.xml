@@ -30,6 +30,11 @@
         </dependency>
 
         <dependency>
+            <groupId>fi.nls.oskari</groupId>
+            <artifactId>download-basket</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>fi.nls.oskari.service</groupId>
             <artifactId>oskari-control-base</artifactId>
         </dependency>
