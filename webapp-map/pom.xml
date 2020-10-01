@@ -22,6 +22,7 @@
             <artifactId>app-resources</artifactId>
             <version>${project.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.oskari.demo</groupId>
             <artifactId>app-specific-code</artifactId>
@@ -29,52 +30,49 @@
         </dependency>
 
         <dependency>
-            <groupId>org.oskari</groupId>
-            <artifactId>control-users</artifactId>
+            <groupId>fi.nls.oskari.service</groupId>
+            <artifactId>oskari-control-base</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>org.oskari</groupId>
-            <artifactId>control-example</artifactId>
+            <groupId>fi.nls.oskari.service</groupId>
+            <artifactId>oskari-control-users</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>org.oskari</groupId>
-            <artifactId>control-myplaces</artifactId>
+            <groupId>fi.nls.oskari.service</groupId>
+            <artifactId>oskari-control-example</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>org.oskari</groupId>
-            <artifactId>control-admin</artifactId>
+            <groupId>fi.nls.oskari.service</groupId>
+            <artifactId>oskari-control-myplaces</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>org.oskari</groupId>
-            <artifactId>control-routing</artifactId>
+            <groupId>fi.nls.oskari.service</groupId>
+            <artifactId>oskari-control-admin</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>org.oskari</groupId>
-            <artifactId>control-statistics</artifactId>
+            <groupId>fi.nls.oskari.service</groupId>
+            <artifactId>oskari-control-routing</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>fi.nls.oskari.service</groupId>
+            <artifactId>oskari-control-statistics</artifactId>
         </dependency>
         <!-- Statistics plugins -->
         <dependency>
-            <groupId>org.oskari</groupId>
+            <groupId>fi.nls.oskari.service</groupId>
             <artifactId>service-statistics-pxweb</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.oskari</groupId>
+            <groupId>org.oskari.service</groupId>
             <artifactId>service-statistics-unsd</artifactId>
         </dependency>
         <!-- /Statistics plugins -->
-
         <dependency>
             <groupId>org.oskari</groupId>
             <artifactId>control-userlayer</artifactId>
         </dependency>
-
         <dependency>
-            <groupId>org.oskari</groupId>
+            <groupId>fi.nls.oskari</groupId>
             <artifactId>service-logging</artifactId>
         </dependency>
         <dependency>
@@ -82,20 +80,23 @@
             <artifactId>log4j-slf4j-impl</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.oskari</groupId>
+            <groupId>fi.nls.oskari</groupId>
             <artifactId>servlet-map</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.ibm.icu</groupId>
+                    <artifactId>icu4j</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
-
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-dbcp2</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
